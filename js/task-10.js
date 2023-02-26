@@ -16,6 +16,7 @@ refs.destroyButtonEl.addEventListener('click', onDestroyButtonClick);
 function onCreateButtonClick() {
   const numberOfDivElementsToCreate = refs.numberInputEl.value;
 
+  destroyBoxes();
   createBoxes(numberOfDivElementsToCreate);
 }
 
@@ -31,6 +32,7 @@ function createBoxes(number) {
 
 function destroyBoxes() {
   refs.boxesDivEl.innerHTML = '';
+  divSideLength = 30;
 }
 
 function createDivElements(number) {
